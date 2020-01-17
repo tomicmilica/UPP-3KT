@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="66AD2233-F098-3C05-BF5D-22B871937337" name="editor" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="3803E615-BCED-2246-C744-53AFA44847B6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Table" objectID="2FF545EB-A459-31F6-FD5B-DFB9A897FC9E" name="magazine" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.relational.Table" propertyParentId="3803E615-BCED-2246-C744-53AFA44847B6" propertySourceId="" propertyTargetId=""/>
+   <object objectType="FKIndexAssociation" objectID="821A17A4-0952-F5CC-5569-DB5862FC92E7" name="magazine_editor_FK" seqName="seg_0" containerID="2FF545EB-A459-31F6-FD5B-DFB9A897FC9E" refContainerID="66AD2233-F098-3C05-BF5D-22B871937337" propertyClassName="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" propertyParentId="3803E615-BCED-2246-C744-53AFA44847B6" propertySourceId="66AD2233-F098-3C05-BF5D-22B871937337" propertyTargetId="2FF545EB-A459-31F6-FD5B-DFB9A897FC9E"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

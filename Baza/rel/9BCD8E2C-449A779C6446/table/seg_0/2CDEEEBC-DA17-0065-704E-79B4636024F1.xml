@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2CDEEEBC-DA17-0065-704E-79B4636024F1" name="Reviewer">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>619F50DB-9207-F1CF-93D2-4891C5CB6D80</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_reviewer" id="08FF621F-9B7B-5C74-B8DC-87F1C6AA6978">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>055E266B-02E5-8143-7EBA-8A7EE4317493</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="city" id="66E657E1-79B0-D4E8-9983-E444C13FD880">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>662ACEE2-7E74-626B-5E3B-11D125C9AD09</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="country" id="936DBBA7-B9A8-E04A-E897-524CACCF5471">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>D54F0C0F-A528-A26E-ED40-756AE69E7434</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="2E11BC42-0B7C-C8D7-A438-AE34C770148E">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>F170D537-492D-5CD8-2265-9DFFD00C92B7</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="D5DE336F-4BED-72C6-BCA9-49BE76A54F05">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>1FB802A5-1149-593D-2CDC-6D6FDF5B0267</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="surname" id="55E88F08-D372-7FD3-B11A-8C312076E621">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>E473372F-DA68-5872-0151-23D20631451D</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3798F6CB-5734-160F-AF84-47E76E456989" name="Reviewer_PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>E55883F1-800E-5F5A-CAC2-2A787A1FB26F</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08FF621F-9B7B-5C74-B8DC-87F1C6AA6978"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

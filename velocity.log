@@ -1,0 +1,841 @@
+2020-01-17 16:48:02,735 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:02,736 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:02,736 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:02,736 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:02,737 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,737 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,739 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:02,739 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,739 - Do unicode file recognition:  false
+2020-01-17 16:48:02,739 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:02,739 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:02,740 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:02,740 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:02,740 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:02,740 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:02,740 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:02,742 - Created '20' parsers.
+2020-01-17 16:48:02,742 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:02,742 - Velocimacro : Default library not found.
+2020-01-17 16:48:02,743 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:02,743 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:02,743 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:02,743 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:02,748 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,753 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,755 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,762 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,765 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,765 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,765 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,768 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,769 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,769 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,769 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,771 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,776 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,778 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,778 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,781 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,782 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,783 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,783 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,785 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,786 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,787 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,787 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,789 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,790 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,790 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,790 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,793 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,794 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,794 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,794 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,797 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,837 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:02,837 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:02,837 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:02,837 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:02,837 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:02,837 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,837 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,837 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:02,837 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,837 - Do unicode file recognition:  false
+2020-01-17 16:48:02,837 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:02,837 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:02,837 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:02,837 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:02,838 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:02,838 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:02,838 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:02,838 - Created '20' parsers.
+2020-01-17 16:48:02,838 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:02,838 - Velocimacro : Default library not found.
+2020-01-17 16:48:02,838 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:02,838 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:02,838 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:02,838 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:02,840 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,842 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,843 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,845 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,847 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,848 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,848 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,850 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,851 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,852 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,852 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,854 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,855 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,855 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,856 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,858 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,859 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,859 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,859 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,862 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,863 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,864 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,864 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,867 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,876 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:02,876 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:02,876 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:02,876 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:02,877 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:02,877 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,877 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,877 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:02,877 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,877 - Do unicode file recognition:  false
+2020-01-17 16:48:02,877 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:02,877 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:02,877 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:02,877 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:02,877 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:02,878 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:02,878 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:02,878 - Created '20' parsers.
+2020-01-17 16:48:02,878 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:02,878 - Velocimacro : Default library not found.
+2020-01-17 16:48:02,878 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:02,878 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:02,878 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:02,878 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:02,881 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,883 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,883 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,885 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,887 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,888 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,888 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,890 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,894 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,895 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,895 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,897 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,899 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,899 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,899 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,901 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,925 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:02,925 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:02,925 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:02,925 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:02,925 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:02,926 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:02,926 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,926 - Do unicode file recognition:  false
+2020-01-17 16:48:02,926 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:02,926 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:02,927 - Created '20' parsers.
+2020-01-17 16:48:02,927 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:02,927 - Velocimacro : Default library not found.
+2020-01-17 16:48:02,927 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:02,927 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:02,929 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,931 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,932 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,934 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,936 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,936 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,936 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,938 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,939 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,940 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,940 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,942 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,943 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,944 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,944 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,946 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,947 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,947 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,947 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,949 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,950 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,951 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,951 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,953 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,011 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:03,011 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:03,011 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:03,011 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:03,012 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,012 - Do unicode file recognition:  false
+2020-01-17 16:48:03,012 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:03,012 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:03,013 - Created '20' parsers.
+2020-01-17 16:48:03,013 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:03,013 - Velocimacro : Default library not found.
+2020-01-17 16:48:03,013 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:03,013 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:03,015 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,017 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,018 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,020 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,021 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,022 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,022 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,024 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,026 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,027 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,027 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,029 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+n(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:02,925 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:02,926 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:02,926 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:02,926 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:02,926 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:02,926 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,926 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,926 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,926 - Do unicode file recognition:  false
+2020-01-17 16:48:02,926 - Do unicode file recognition:  false
+2020-01-17 16:48:02,926 - Do unicode file recognition:  false
+2020-01-17 16:48:02,926 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:02,926 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:02,926 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:02,926 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:02,926 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:02,926 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:02,926 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:02,927 - Created '20' parsers.
+2020-01-17 16:48:02,927 - Created '20' parsers.
+2020-01-17 16:48:02,927 - Created '20' parsers.
+2020-01-17 16:48:02,927 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:02,927 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:02,927 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:02,927 - Velocimacro : Default library not found.
+2020-01-17 16:48:02,927 - Velocimacro : Default library not found.
+2020-01-17 16:48:02,927 - Velocimacro : Default library not found.
+2020-01-17 16:48:02,927 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:02,927 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:02,927 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:02,927 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:02,927 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:02,927 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:02,927 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:02,929 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,929 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,929 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,931 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,931 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,931 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,932 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,932 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,932 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,934 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,934 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,934 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,936 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,936 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,936 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,936 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,936 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,936 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,936 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,936 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,936 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,938 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,938 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,938 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,939 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,939 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,939 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,940 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,940 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,940 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,940 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,940 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,940 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,942 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,942 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,942 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,943 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,943 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,943 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,944 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,944 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,944 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,944 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,944 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,944 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,946 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,946 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,946 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,947 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,947 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,947 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,947 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,947 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,947 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,947 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,947 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,947 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,949 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,949 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,949 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,950 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,950 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,950 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,951 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,951 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,951 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:02,951 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,951 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,951 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:02,953 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,953 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:02,953 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,011 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:03,011 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:03,011 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:03,011 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 16:48:03,011 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:03,011 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:03,011 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:03,011 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 16:48:03,011 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:03,011 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:03,011 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:03,011 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 16:48:03,011 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:03,011 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:03,011 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:03,011 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 16:48:03,011 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:03,011 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:03,011 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:03,011 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 16:48:03,012 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,012 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,012 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,012 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,012 - Do unicode file recognition:  false
+2020-01-17 16:48:03,012 - Do unicode file recognition:  false
+2020-01-17 16:48:03,012 - Do unicode file recognition:  false
+2020-01-17 16:48:03,012 - Do unicode file recognition:  false
+2020-01-17 16:48:03,012 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:03,012 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:03,012 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:03,012 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 16:48:03,012 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:03,012 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:03,012 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:03,012 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:03,012 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 16:48:03,013 - Created '20' parsers.
+2020-01-17 16:48:03,013 - Created '20' parsers.
+2020-01-17 16:48:03,013 - Created '20' parsers.
+2020-01-17 16:48:03,013 - Created '20' parsers.
+2020-01-17 16:48:03,013 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:03,013 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:03,013 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:03,013 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 16:48:03,013 - Velocimacro : Default library not found.
+2020-01-17 16:48:03,013 - Velocimacro : Default library not found.
+2020-01-17 16:48:03,013 - Velocimacro : Default library not found.
+2020-01-17 16:48:03,013 - Velocimacro : Default library not found.
+2020-01-17 16:48:03,013 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:03,013 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:03,013 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:03,013 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:03,013 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 16:48:03,013 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:03,013 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:03,013 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:03,013 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 16:48:03,015 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,015 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,015 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,015 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,017 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,017 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,017 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,017 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,018 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,018 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,018 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,018 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,020 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,020 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,020 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,020 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,021 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,021 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,021 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,021 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,022 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,022 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,022 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,022 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,022 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,022 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,022 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,022 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,024 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,024 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,024 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,024 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,026 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,026 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,026 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,026 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,027 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,027 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,027 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,027 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 16:48:03,027 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,027 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,027 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,027 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 16:48:03,029 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,029 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,029 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 16:48:03,029 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:33,574 - Log4JLogChute initialized using file 'velocity.log'
+2020-01-17 17:01:33,574 - Starting Apache Velocity v1.5 (compiled: 2007-02-22 08:52:29)
+2020-01-17 17:01:33,574 - Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+2020-01-17 17:01:33,574 - Trying to use logger class org.apache.velocity.runtime.log.AvalonLogChute
+2020-01-17 17:01:33,574 - Couldn't find class org.apache.velocity.runtime.log.AvalonLogChute or necessary supporting classes in classpath.
+java.lang.NoClassDefFoundError: org/apache/log/format/Formatter
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Unknown Source)
+	at org.apache.velocity.util.ClassUtils.getClass(ClassUtils.java:63)
+	at org.apache.velocity.util.ClassUtils.getNewInstance(ClassUtils.java:95)
+	at org.apache.velocity.runtime.log.LogManager.createLogChute(LogManager.java:147)
+	at org.apache.velocity.runtime.log.LogManager.updateLog(LogManager.java:208)
+	at org.apache.velocity.runtime.RuntimeInstance.initializeLog(RuntimeInstance.java:728)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:240)
+	at org.apache.velocity.runtime.RuntimeInstance.init(RuntimeInstance.java:534)
+	at org.apache.velocity.app.VelocityEngine.init(VelocityEngine.java:144)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateClass(PackageGenerator.java:303)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generateInternal(PackageGenerator.java:132)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.doGenerate(PackageGenerator.java:106)
+	at org.eclipse.jpt.jpa.gen.internal.PackageGenerator.generate(PackageGenerator.java:82)
+	at org.eclipse.jpt.jpa.ui.internal.wizards.gen.GenerateEntitiesFromSchemaWizard$GenerateEntitiesJob.runInWorkspace(GenerateEntitiesFromSchemaWizard.java:285)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.apache.log.format.Formatter cannot be found by org.apache.velocity_1.5.0.v200905192330
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:514)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:425)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:417)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:155)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 17 more
+2020-01-17 17:01:33,590 - Trying to use logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 17:01:33,590 - Using logger class org.apache.velocity.runtime.log.Log4JLogChute
+2020-01-17 17:01:33,590 - Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+2020-01-17 17:01:33,590 - ResourceLoader instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:33,590 - Do unicode file recognition:  false
+2020-01-17 17:01:33,590 - FileResourceLoader : adding path 'C:\Users\Milica\eclipse\java-2019-09\eclipse\configuration\org.eclipse.jpt.jpa.gen\templates\entities'
+2020-01-17 17:01:33,605 - ResourceCache: initialized (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+2020-01-17 17:01:33,605 - Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+2020-01-17 17:01:33,605 - Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+2020-01-17 17:01:33,605 - Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+2020-01-17 17:01:33,621 - Loaded System Directive: org.apache.velocity.runtime.directive.Include
+2020-01-17 17:01:33,621 - Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+2020-01-17 17:01:33,652 - Created '20' parsers.
+2020-01-17 17:01:33,652 - Velocimacro : "velocimacro.library" is not set.  Trying default library: VM_global_library.vm
+2020-01-17 17:01:33,652 - Velocimacro : Default library not found.
+2020-01-17 17:01:33,652 - Velocimacro : allowInline = true : VMs can be defined inline in templates
+2020-01-17 17:01:33,652 - Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+2020-01-17 17:01:33,652 - Velocimacro : allowInlineLocal = false : VMs defined inline will be global in scope if allowed.
+2020-01-17 17:01:33,652 - Velocimacro : autoload off : VM system will not automatically reload global library macros
+2020-01-17 17:01:33,715 - ResourceManager : found main.java.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,058 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,058 - Velocimacro : added #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,073 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,089 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,089 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 17:01:34,089 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,089 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,105 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,105 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 17:01:34,105 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,105 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,120 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,120 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 17:01:34,120 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,136 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,136 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,136 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 17:01:34,136 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,136 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,136 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,136 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 17:01:34,136 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,151 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,151 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,151 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 17:01:34,151 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,151 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,151 - ResourceManager : found mappingKind.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+2020-01-17 17:01:34,151 - Velocimacro : VM addition rejected : append : inline not allowed to replace existing VM
+2020-01-17 17:01:34,151 - Failed to add macro: #append(  members parameters ) : source = column.vm
+2020-01-17 17:01:34,167 - ResourceManager : found column.vm with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader

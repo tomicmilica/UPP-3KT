@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- origin at X=0.0 Y=0.0 -->
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xs="http://www.w3.org/2001/XMLSchema" id="Definitions_0hs7i8f" exporter="org.eclipse.bpmn2.modeler.core" exporterVersion="1.5.1.Final-v20190425-2005-B1" targetNamespace="http://bpmn.io/schema/bpmn">
+  <bpmn:process id="Registration" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" camunda:initiator="Milica">
+      <bpmn:outgoing>SequenceFlow_1xs0rvz</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="Task_0fjd2mg" camunda:assignee="registered " name="Registration process">
+      <bpmn:extensionElements>
+        <camunda:formData xsi:type="xs:anyType">
+          <camunda:formField xsi:type="xs:anyType" id="name" label="Name" type="string"/>
+          <camunda:formField xsi:type="xs:anyType" id="surname" label="Surname" type="string"/>
+          <camunda:formField xsi:type="xs:anyType" id="email" label="Email" type="string"/>
+          <camunda:formField xsi:type="xs:anyType" id="password" label="Password" type="string"/>
+          <camunda:formField xsi:type="xs:anyType" id="city" label="City" type="string"/>
+          <camunda:formField xsi:type="xs:anyType" id="country" label="Country" type="string"/>
+          <camunda:formField xsi:type="xs:anyType" id="reviewer" label="Reviewer" type="boolean"/>
+        </camunda:formData>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_1xs0rvz</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_2</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="SequenceFlow_1xs0rvz" sourceRef="StartEvent_1" targetRef="Task_0fjd2mg"/>
+    <bpmn:endEvent id="EndEvent_06of4yy">
+      <bpmn:incoming>SequenceFlow_1</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:serviceTask id="Task_0vqsgxq" camunda:class="root.demo.servicesCamunda.SendMailConfirmation" name="Mail confirmation&#xA;">
+      <bpmn:incoming>SequenceFlow_00830en</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_1</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:sequenceFlow id="SequenceFlow_2" sourceRef="Task_0fjd2mg" targetRef="UserTask_180v5o7"/>
+    <bpmn:userTask id="UserTask_180v5o7" camunda:assignee="registered " name="Choose Scientific Area">
+      <bpmn:extensionElements>
+        <camunda:formData xsi:type="xs:anyType">
+          <camunda:formField xsi:type="xs:anyType" id="scientificArea" label="Scientific Area" type="string"/>
+        </camunda:formData>
+      </bpmn:extensionElements>
+      <bpmn:incoming>SequenceFlow_2</bpmn:incoming>
+      <bpmn:outgoing>SequenceFlow_00830en</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="SequenceFlow_00830en" sourceRef="UserTask_180v5o7" targetRef="Task_0vqsgxq"/>
+    <bpmn:sequenceFlow id="SequenceFlow_1" sourceRef="Task_0vqsgxq" targetRef="EndEvent_06of4yy"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Registration">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds height="36.0" width="36.0" x="150.0" y="124.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_3" labelStyle="BPMNLabelStyle_1"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_1xzonhk_di" bpmnElement="Task_0fjd2mg">
+        <dc:Bounds height="80.0" width="100.0" x="310.0" y="102.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_5" labelStyle="BPMNLabelStyle_1">
+          <dc:Bounds height="30.0" width="70.0" x="325.0" y="127.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_06of4yy_di" bpmnElement="EndEvent_06of4yy">
+        <dc:Bounds height="36.0" width="36.0" x="710.0" y="317.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_16" labelStyle="BPMNLabelStyle_1"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="ServiceTask_1rijnxn_di" bpmnElement="Task_0vqsgxq">
+        <dc:Bounds height="90.0" width="96.0" x="500.0" y="290.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_1" labelStyle="BPMNLabelStyle_1">
+          <dc:Bounds height="15.0" width="93.0" x="501.0" y="327.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="UserTask_180v5o7_di" bpmnElement="UserTask_180v5o7">
+        <dc:Bounds height="80.0" width="100.0" x="490.0" y="102.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_9" labelStyle="BPMNLabelStyle_1">
+          <dc:Bounds height="30.0" width="80.0" x="500.0" y="127.0"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="SequenceFlow_1xs0rvz_di" bpmnElement="SequenceFlow_1xs0rvz" sourceElement="_BPMNShape_StartEvent_2" targetElement="UserTask_1xzonhk_di">
+        <di:waypoint xsi:type="dc:Point" x="186.0" y="142.0"/>
+        <di:waypoint xsi:type="dc:Point" x="248.0" y="142.0"/>
+        <di:waypoint xsi:type="dc:Point" x="310.0" y="142.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_6"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_2" bpmnElement="SequenceFlow_2" sourceElement="UserTask_1xzonhk_di" targetElement="UserTask_180v5o7_di">
+        <di:waypoint xsi:type="dc:Point" x="410.0" y="142.0"/>
+        <di:waypoint xsi:type="dc:Point" x="490.0" y="142.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_7"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="SequenceFlow_00830en_di" bpmnElement="SequenceFlow_00830en" sourceElement="UserTask_180v5o7_di" targetElement="ServiceTask_1rijnxn_di">
+        <di:waypoint xsi:type="dc:Point" x="540.0" y="182.0"/>
+        <di:waypoint xsi:type="dc:Point" x="540.0" y="236.0"/>
+        <di:waypoint xsi:type="dc:Point" x="548.0" y="236.0"/>
+        <di:waypoint xsi:type="dc:Point" x="548.0" y="290.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_10"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_SequenceFlow_1" bpmnElement="SequenceFlow_1" sourceElement="ServiceTask_1rijnxn_di" targetElement="EndEvent_06of4yy_di">
+        <di:waypoint xsi:type="dc:Point" x="596.0" y="335.0"/>
+        <di:waypoint xsi:type="dc:Point" x="653.0" y="335.0"/>
+        <di:waypoint xsi:type="dc:Point" x="710.0" y="335.0"/>
+        <bpmndi:BPMNLabel id="BPMNLabel_17"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+    <bpmndi:BPMNLabelStyle id="BPMNLabelStyle_1">
+      <dc:Font name="arial" size="9.0"/>
+    </bpmndi:BPMNLabelStyle>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

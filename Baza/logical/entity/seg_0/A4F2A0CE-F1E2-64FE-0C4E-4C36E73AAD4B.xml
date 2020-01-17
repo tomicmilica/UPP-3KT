@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A4F2A0CE-F1E2-64FE-0C4E-4C36E73AAD4B" name="Scientific Area">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:05:38 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="26FD56F5-4642-BA56-F3F1-80F15EC76632">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:05:49 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="11F6183A-937F-3817-365D-5A195FCBD760">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:06:00 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_user" id="F614DD55-13CF-138A-723C-FDBB4E62F9BE">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:12:27 UTC</createdTime>
+<generatorID>0BA39DE2-B7DC-4775-AAE8-C8CF44A4285E</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3CBDFCD8-2DB9-89A8-3C46-8D19E94DC376</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF3C36F7-6B22-288F-75C5-8BA94B0D6128" name="Scientific Area PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:05:58 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>26FD56F5-4642-BA56-F3F1-80F15EC76632</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="06736BC0-D86F-27F4-C3E9-E5E50FB46534" name="editor">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:46:16 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="45C6C37C-A3BD-C205-D4DA-DB61E104C300">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:46:26 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="6E063A6A-B7FD-5B18-7C48-7B8353D6D6A3">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:58:44 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country" id="85377A32-E215-7828-1400-9B8559ADA1ED">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:58:59 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="4A6A10BD-7CBC-91A6-0102-F2EEF5A0A5F4">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:59:16 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="FA52E9EC-2BBD-52C2-20FD-26C6DADBD0BB">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:59:27 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="password" id="91D10895-B581-0E05-B87A-AEB0278BC937">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:59:38 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="surname" id="24ACA9C3-9D56-3D7E-4453-27066E46F17D">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:59:58 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F3855F85-455A-85F9-717D-A33B5594672C" name="editor PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:46:41 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3803E615-BCED-2246-C744-53AFA44847B6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>45C6C37C-A3BD-C205-D4DA-DB61E104C300</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

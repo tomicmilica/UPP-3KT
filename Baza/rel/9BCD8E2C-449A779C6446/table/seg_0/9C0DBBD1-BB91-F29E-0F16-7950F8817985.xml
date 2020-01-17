@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C0DBBD1-BB91-F29E-0F16-7950F8817985" name="Magazine">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>7B136381-7943-C826-5CAB-8F08C43B41FE</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_magazine" id="D445CBA8-2791-F614-4672-DED05631BA9C">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>9C4E76E8-7C1A-D4B5-2179-587A1BFDA926</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="title" id="5742ECC9-15DB-C06A-FEF9-C2BEE806FA7A">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>2CDF8099-728F-37B8-15C5-C9F8C3741CED</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="open_access" id="27B2DAEC-78FD-7FA9-07F0-00E6430CDB15">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>E49DFD71-A8C0-B139-6573-C036236BE27F</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Editor_id_editor" id="ADE157BF-4DA5-DF71-481E-1C61FBA52FEE">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>81F15C5E-2580-6D76-804B-FD0048E898CC</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED2668CC-3DEF-0296-2C33-5623E3127A9F" referredColumn="7E18FF58-8220-A93B-587C-83D6756CAFE3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CB930F0B-B472-46D9-4AA9-C08607331BF2" name="Magazine_PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>1505B373-E075-F09A-A222-B7D04226AD53</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D445CBA8-2791-F614-4672-DED05631BA9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7420737A-5BFF-AED4-0F45-624D7D15EE3A" name="Magazine_Editor_FK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>99395343-C09E-0A5F-3015-E05C58BA87F6</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADE157BF-4DA5-DF71-481E-1C61FBA52FEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="619F50DB-9207-F1CF-93D2-4891C5CB6D80" name="Reviewer">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_reviewer" id="055E266B-02E5-8143-7EBA-8A7EE4317493">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="city" id="662ACEE2-7E74-626B-5E3B-11D125C9AD09">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="country" id="D54F0C0F-A528-A26E-ED40-756AE69E7434">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="F170D537-492D-5CD8-2265-9DFFD00C92B7">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="1FB802A5-1149-593D-2CDC-6D6FDF5B0267">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="surname" id="E473372F-DA68-5872-0151-23D20631451D">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E55883F1-800E-5F5A-CAC2-2A787A1FB26F" name="AppUser PK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:25:07 UTC</createdTime>
+<ownerDesignName>Baza</ownerDesignName>
+<engineerTo>
+<item key="9BCD8E2C-5367-C6AD-0B0D-449A779C6446" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>055E266B-02E5-8143-7EBA-8A7EE4317493</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

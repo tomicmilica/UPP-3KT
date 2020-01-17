@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ED2668CC-3DEF-0296-2C33-5623E3127A9F" containerWithKeyObject="9C0DBBD1-BB91-F29E-0F16-7950F8817985" localFKIndex="7420737A-5BFF-AED4-0F45-624D7D15EE3A" name="Magazine_Editor_FK">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 19:26:17 UTC</createdTime>
+<generatorID>99395343-C09E-0A5F-3015-E05C58BA87F6</generatorID>
+<ownerDesignName>Baza</ownerDesignName>
+<referredTableLongName>Editor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4144C16A-76CD-A2C9-B9AC-68E9062DCE4E</referredTableID>
+<keyObject>4AF3BFCD-2F00-7132-3D33-F2DD40EB1218</keyObject>
+<referredKeyID>4AF3BFCD-2F00-7132-3D33-F2DD40EB1218</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_editor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

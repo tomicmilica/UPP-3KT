@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="fsdfsa" id="97A9DD13-71E5-147B-20B9-FF57AE88EF92" version="3.5">
+<createdBy>Milica</createdBy>
+<createdTime>2020-01-16 15:36:38 UTC</createdTime>
+<ownerDesignName>fsdfsa</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>97A9DD13-71E5-147B-20B9-FF57AE88EF92</designId>
+</OSDM_Design>
